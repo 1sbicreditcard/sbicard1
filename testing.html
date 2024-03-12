@@ -2,7 +2,9 @@
 <html>
 <head>
   <title>Telegram Bot Messages</title>
-  <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Add viewport meta tag for responsiveness -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  <!-- Add Bootstrap CSS -->
+  <<style>
     body {
       font-family: Arial, sans-serif;
       background-color: white;
@@ -35,11 +37,26 @@
   </style>
 </head>
 <body>
-  <div class="customer-service-text">ADMIN-Pannel</div>
-
-  <div class="chat-container" id="chat">
-    <!-- Messages will be displayed here -->
+  <div class="container-fluid"> <!-- Use Bootstrap container for full-width layout -->
+    <div class="row">
+      <div class="col-12 text-center bg-light"> <!-- Use Bootstrap grid system for the customer service text -->
+        <div class="customer-service-text">ADMIN-Panel</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 bg-light" style="padding-top: 10px; padding-bottom: 70px;"> <!-- Adjust padding as needed -->
+        <div class="chat-container" id="chat">
+          <!-- Messages will be displayed here -->
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!-- JavaScript and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <script>
     // Add your JavaScript here
     const apiToken = '7071893116:AAHBXquaPnyTeoC5gCpprcUFvC2vQIjoM4g'; // Replace with your actual API token
